@@ -1,6 +1,7 @@
 <?php
 /*
  * Plugin Name: Page Menus Widget
+ * Plugin URI: http://www.joedonahue.org/projects/page-menus-widget/
  * Description: Display custom menu widget on specific pages
  * Version: 1.0
  * Author: Joe Donahue
