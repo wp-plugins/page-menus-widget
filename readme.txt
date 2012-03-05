@@ -3,7 +3,7 @@ Contributors: Joedonahue.org
 Tags: menu,widget,widgets,navigation,nav,custom menus,custom menu,page,pages,cms
 Requires at least: 3.0
 Tested up to: 3.3.1
-Stable tag: 1.0
+Stable tag: 1.2
 
 Menu with Page Assignment Widget
 
@@ -47,9 +47,11 @@ Yes. You can email me in this case.
 * "Show hierarchy" - you can set to display only related or strictly related items
 * "Starting depth" - display only menu items which depth is greater then this
 * "How many levels to display" - limit the display from 1 to 5 levels or flat display
-* "Include parents" - when checked it display also parent item upon filters (e.x. Display only children of selected item)
 
 == Changelog ==
+
+= 1.2 =
+Remove debug code causing post id to appear after title
 
 = 1.0 =
 initial release
