@@ -2,8 +2,8 @@
 /*
  * Plugin Name: Page Menus Widget
  * Plugin URI: http://www.joedonahue.org/projects/page-menus-widget/
- * Description: Display custom menu widget on specific pages
- * Version: 1.2
+ * Description: Display custom menu widgets on specific pages
+ * Version: 1.3
  * Author: Joe Donahue
  * Author URI: http://www.joedonahue.org/
  * License: GPL2+
@@ -292,6 +292,9 @@ class Page_Menus_Related_Sub_Items_Walker extends Walker_Nav_Menu
 		$menu_items = substr_count($menu,'class="menu-item ');
 		
 		if ($menu_items && ($selected_page == $post_id)) {
+				
+			echo "<li class='widget-container'>";		
+				
 			if ( $custom_widget_class ) {
 				echo str_replace ('class="', 'class="' . "$custom_widget_class ");
 			} 
@@ -301,7 +304,9 @@ class Page_Menus_Related_Sub_Items_Walker extends Walker_Nav_Menu
 	
 			echo $menu;
 			
-			echo $args['after_widget'];		
+			echo $args['after_widget'];
+			
+			echo "</li> <!-- end page menus widget -->";			
 		}
 		
 	}
